@@ -1,0 +1,106 @@
+/*--------------------------------------------*/
+/*                 General Styles             */
+/*--------------------------------------------*/
+
+*{
+	box-sizing: border-box;
+}
+
+img{
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+/*--------------------------------------------*/
+/*                 Div Styles                 */
+/*--------------------------------------------*/
+
+#title{
+	font-size: 3vw;
+  font-family: Garamond;
+  color: pink;
+	text-align: center;	
+/*	background: rgba(240, 128, 128, 0.3);
+*/padding: 10px;
+}
+
+#tempContainer{
+	/*border: 2px solid purple ;*/
+	display: block;
+	border-radius: 65%;
+	max-width: 50%;
+	margin: auto;
+	text-align: center;
+	font-size: 2vw;
+  background: rgba(232, 193, 242, 0.3);
+  font-family: Optima;
+}
+
+/*#loadingGif {
+  width: 250px;
+}
+*/
+
+/*--------------------------------------------*/
+/*              Button Styles                 */
+/*--------------------------------------------*/
+
+button {
+  background-color:#400083;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+  display:block;
+  cursor:pointer;
+  color: #c5bdfb ;
+  font-family:Trebuchet MS;
+  font-size:20px;
+  font-weight:bold;
+  font-style:italic;
+  padding:13px 32px;
+  margin: 20px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #3d768a;
+}
+
+button:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+  background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+  background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+  background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+  background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+  background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color:#408c99;
+}
+
+button:active {
+  position:relative;
+  top:1px;
+}
+
+
+
+
+
+
+
+
+
